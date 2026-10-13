@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>军哥的小站</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+    background: #f7f6f2; color: #333; line-height: 1.8; font-size: 18px;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 24px 20px 60px; }
+  header { text-align: center; padding: 36px 0 20px; }
+  header h1 { font-size: 34px; color: #2c3e50; letter-spacing: 2px; }
+  header p { color: #888; margin-top: 8px; font-size: 16px; }
+  nav { text-align: center; margin: 18px 0 30px; }
+  nav a {
+    display: inline-block; margin: 0 14px; color: #2c7a7b; text-decoration: none;
+    font-size: 18px; padding: 4px 6px; border-bottom: 2px solid transparent;
+  }
+  nav a:hover { border-bottom: 2px solid #2c7a7b; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .card h2 { font-size: 24px; color: #2c3e50; margin-bottom: 6px; }
+  .date { color: #aaa; font-size: 15px; margin-bottom: 14px; }
+  .card p { margin-bottom: 12px; }
+  .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 14px; }
+  .gallery img { width: 100%; border-radius: 10px; display: block; }
+  .tip { background: #fff8e6; border-radius: 10px; padding: 16px 20px; font-size: 15px; color: #8a6d1a; }
+  footer { text-align: center; color: #bbb; font-size: 14px; margin-top: 40px; }
+  @media (max-width: 500px) { body { font-size: 17px; } header h1 { font-size: 28px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>军哥的小站</h1>
+    <p>记录生活 · 随手写写</p>
+  </header>
+
+  <nav>
+    <a href="#wenzhang">文章</a>
+    <a href="#zhaopian">照片</a>
+    <a href="#guanyu">关于</a>
+  </nav>
+
+  <!-- ══════════ 文章区：加新文章就复制一个 card 改标题和正文 ══════════ -->
+  <div id="wenzhang">
+    <div class="card">
+      <h2>欢迎来到我的小站</h2>
+      <div class="date">2026-10-13</div>
+      <p>这是小站的第一篇文章。以后有想法、有照片，就更新在这里。</p>
+      <p>换手机、换电脑都能打开，只要有网就能看。</p>
+    </div>
+
+    <div class="card">
+      <h2>文章标题二（示例，可改可删）</h2>
+      <div class="date">2026-10-14</div>
+      <p>在这里写正文。想分段就多写几个 &lt;p&gt; 段落。</p>
+      <p>写完保存，刷新网页就能看到。</p>
+    </div>
+  </div>
+
+  <!-- ══════════ 照片区：把 photos 文件夹传上去，改下面的文件名 ══════════ -->
+  <div id="zhaopian">
+    <div class="card">
+      <h2>📷 照片</h2>
+      <p class="date">点击图片可放大</p>
+      <div class="gallery">
+        <!-- 用法：把照片传到 photos 文件夹，然后复制一行 <img src="photos/照片名.jpg"> -->
+        <img src="photos/示例1.jpg" alt="照片1" loading="lazy">
+        <img src="photos/示例2.jpg" alt="照片2" loading="lazy">
+        <img src="photos/示例3.jpg" alt="照片3" loading="lazy">
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════ 关于 ══════════ -->
+  <div id="guanyu">
+    <div class="card">
+      <h2>关于我</h2>
+      <p>贵州独山人，退休在家，喜欢打乒乓球、写点东西。</p>
+    </div>
+  </div>
+
+  <div class="tip">
+    💡 给自己看的备忘：加文章 = 复制一个"卡片"改文字；加照片 = 传图到 photos 文件夹再加一行 img。
+  </div>
+
+  <footer>© 2026 军哥 · Powered by GitHub Pages</footer>
+</div>
+</body>
+</html>
